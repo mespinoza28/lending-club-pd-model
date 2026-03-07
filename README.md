@@ -5,7 +5,7 @@ A credit risk model built on the LendingClub loan dataset to predict the
 probability that a borrower will default on their loan.
 
 Two notebooks cover the full pipeline:
-- `LendingClubProject_DataCleaning.ipynb` — data cleaning, feature engineering and WoE encoding
+- `LC_DataCleaning.ipynb` — data cleaning, feature engineering and WoE encoding
 - `PD_Model.ipynb` — model training, evaluation and comparison
 
 ## Results
@@ -19,9 +19,15 @@ Two notebooks cover the full pipeline:
 **Selected model: Logistic Regression** — highest AUC and KS, and preferred 
 in credit risk for regulatory interpretability.
 
+## Data
+The raw dataset is the LendingClub loan data, publicly available on Kaggle:
+[Download here](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
+
+Once downloaded, place the file in `data/raw/lendingclub.csv` and run the cleaning notebook first.
+
 ## How to Run
-1. Download the LendingClub dataset and place it in `data/raw/lendingclub.csv`
-2. Run `LendingClubProject_DataCleaning.ipynb` to generate processed files
+1. Download the dataset from the link above and place it in `data/raw/lendingclub.csv`
+2. Run `LC_DataCleaning.ipynb` to clean the data and generate processed files
 3. Run `PD_Model.ipynb` to train and evaluate the models
 
 ## Requirements
